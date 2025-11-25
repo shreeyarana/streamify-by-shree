@@ -1,27 +1,21 @@
 # Streamify: End-to-End Data Engineering Pipeline
 
-This is a personalized version of the **Streamify** data engineering project, customized by **Shree Rana**.
+This is created by **Shreeya Rana**.
 
 The project demonstrates an end-to-end data pipeline architecture using **Kafka**, **Airflow**, **Spark Streaming**, **dbt**, and **BigQuery**, covering data ingestion, transformation, and analytics.  
-
-I am preserving the original implementation and structure while using this version for my learning, experimentation, and portfolio.
 
 ---
 
 ### 📘 About Me
-I’m **Shree Rana**, a data enthusiast with interests in:
+I’m **Shreeya Rana**, a data enthusiast with interests in:
 - **Data Engineering & Analytics**
 - **ETL & Data Pipelines**
 - **BigQuery, SQL, and Airflow**
 - **Real-time Data Streaming (Kafka)**
 - **Machine Learning & Predictive Analytics**
 
-This repository serves as my personalized version of a production-grade data engineering project showcasing these skills.
-
-
+This repository showcases these skills.
 A data pipeline with Kafka, Spark Streaming, dbt, Docker, Airflow, Terraform, GCP and much more!
-
-## Description
 
 ### Objective
 
@@ -29,9 +23,12 @@ The project will stream events generated from a fake music streaming service (li
 
 ### Dataset
 
-[Eventsim](https://github.com/Interana/eventsim) is a program that generates event data to replicate page requests for a fake music web site. The results look like real use data, but are totally fake. The docker image is borrowed from [viirya's fork](https://github.com/viirya/eventsim) of it, as the original project has gone without maintenance for a few years now.
+This project uses the **Eventsim** data generator to simulate user song-play events for a music streaming platform.  
 
-Eventsim uses song data from [Million Songs Dataset](http://millionsongdataset.com) to generate events. I have used a [subset](http://millionsongdataset.com/pages/getting-dataset/#subset) of 10000 songs.
+In this repository, the `eventsim` folder is not included to keep the repository lightweight and GitHub-friendly.  
+
+Eventsim typically uses song metadata from the [Million Songs Dataset](http://millionsongdataset.com) to simulate realistic user behavior.  
+I have used a [subset](http://millionsongdataset.com/pages/getting-dataset/#subset) of 10000 songs.
 
 ### Tools & Technologies
 
@@ -53,45 +50,11 @@ Eventsim uses song data from [Million Songs Dataset](http://millionsongdataset.c
 ### Final Result
 
 ![dashboard](images/dashboard.png)
-## Setup
 
-**WARNING: You will be charged for all the infra setup. You can avail 300$ in credit by creating a new account on GCP.**
-### Pre-requisites
-
-If you already have a Google Cloud account and a working terraform setup, you can skip the pre-requisite steps.
-
-- Google Cloud Platform. 
-  - [GCP Account and Access Setup](setup/gcp.md)
-  - [gcloud alternate installation method - Windows](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/week_1_basics_n_setup/1_terraform_gcp/windows.md#google-cloud-sdk)
-- Terraform
-  - [Setup Terraform](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/week_1_basics_n_setup/1_terraform_gcp/windows.md#terraform)
-
-
-### Get Going!
-
-A video walkthrough of how I run my project - [YouTube Video](https://youtu.be/vzoYhI8KTlY)
-
-- Procure infra on GCP with Terraform - [Setup](setup/terraform.md)
-- (Extra) SSH into your VMs, Forward Ports - [Setup](setup/ssh.md)
-- Setup Kafka Compute Instance and start sending messages from Eventsim - [Setup](setup/kafka.md)
-- Setup Spark Cluster for stream processing - [Setup](setup/spark.md)
-- Setup Airflow on Compute Instance to trigger the hourly data pipeline - [Setup](setup/airflow.md)
-
-
-### Debug
-
-If you run into issues, see if you find something in this debug [guide](setup/debug.md).
 ### How can I make this better?!
-A lot can still be done :).
-- Choose managed Infra
-  - Cloud Composer for Airflow
-  - Confluent Cloud for Kafka
-- Create your own VPC network
-- Build dimensions and facts incrementally instead of full refresh
-- Write data quality tests
-- Create dimensional models for additional business processes
-- Include CI/CD
-- Add more visualizations
-
-### Special Mentions
-I'd like to thank the [DataTalks.Club](https://datatalks.club) for offering this Data Engineering course for completely free. All the things I learnt there, enabled me to come up with this project. If you want to upskill on Data Engineering technologies, please check out the [course](https://github.com/DataTalksClub/data-engineering-zoomcamp). :)
+- Choose managed Infra  
+  - Cloud Composer for Airflow  
+  - Confluent Cloud for Kafka  
+- Write data quality tests  
+- Include CI/CD  
+- Add more visualizations  
