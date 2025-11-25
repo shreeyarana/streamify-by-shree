@@ -15,8 +15,6 @@ I’m **Shreeya Rana**, a data enthusiast with interests in:
 - **Machine Learning & Predictive Analytics**
 
 This repository showcases these skills.
-
-
 A data pipeline with Kafka, Spark Streaming, dbt, Docker, Airflow, Terraform, GCP and much more!
 
 ## Description
